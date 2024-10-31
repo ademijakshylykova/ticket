@@ -5,18 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flight Ticket</title>
     <style>
+        :root {
+            --color-wrapper-background: #FFFFFF;
+            --color-primary: #4E8AC9;
+            --color-info-text: #BFB8B4;
+            --color-body-text: #000000;
+        }
         body {
             margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("img/background.jpg");
+            background-size: cover;
             font-family: 'Roboto', sans-serif;
-            background-color: #FFFFFF;
         }
         .wrapper {
-            padding: 2em;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            background-color: var(--color-wrapper-background);
+            border-radius: 3px;
+            padding: 2.5em 2em;
+        }
+        .city {
+            font-size: 1.5em;
+            color: var(--color-primary);
         }
         .flight-info {
             margin-top: 1em;
+            color: var(--color-body-text);
         }
     </style>
 </head>
@@ -28,6 +45,12 @@
             <p>Flight: 815</p>
             <p>Gate: 23G</p>
             <p>Seat: 10F</p>
+            <p>Passenger: Robert De Niro</p>
+            <p>Class: Business</p>
+            <p>Departure: 3:45am, Dec 15</p>
+        </div>
+        <div class="qr-code">
+            <img src="img/qr.svg" alt="QR Code" style="width: 150px; height: 150px;"/>
         </div>
     </div>
 </body>
