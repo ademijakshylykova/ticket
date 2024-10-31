@@ -1,0 +1,32 @@
+:root {
+    --color-wrapper-background: #FFFFFF;
+    --color-primary: #4E8AC9;
+    --color-info-text: #BFB8B4;
+    --color-body-text: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Prompt:wght@700&display=swap");
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+}
+
+.wrapper {
+    background-color: var(--color-wrapper-background);
+    border-radius: 3px;
+    padding: 2.5em 2em;
+}
+
+.wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4em;
+}
