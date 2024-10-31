@@ -30,3 +30,72 @@ body {
     align-items: center;
     margin-bottom: 4em;
 }
+
+.city {
+    display: flex;
+    flex-direction: column;
+}
+
+.city:first-of-type {
+    padding-right: 2em;
+}
+
+.city:last-of-type {
+    padding-left: 2em;
+    text-align: right;
+}
+
+.separator {
+    min-height: 5px;
+    min-width: 25px;
+    background-color: #6FAFD1;
+}
+
+.flight-infos {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.flight-infos > * {
+    margin-right: 5.25em;
+}
+
+.flight-infos > .block:last-of-type {
+    margin: 0;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
+.passenger-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.id-city {
+    font-family: 'Prompt', sans-serif;
+    font-size: 35pt;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 35pt;
+    color: var(--color-primary);
+}
+
+.full-city,
+.info {
+    text-transform: uppercase;
+    color: var(--color-info-text);
+}
+
+.info {
+    font-size: 7pt;
+}
